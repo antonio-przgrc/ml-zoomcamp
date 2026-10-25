@@ -1,0 +1,25 @@
+[project]
+name = "ml-zoomcamp"
+version = "0.1.0"
+description = "Notes and homework for the DataTalksClub Machine Learning Zoomcamp"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "pandas",
+    "scikit-learn",
+    "xgboost",
+    "matplotlib",
+    "seaborn",
+    "jupyter",
+    "fastapi",
+    "uvicorn",
+    "requests",
+]
+
+[dependency-groups]
+# Modules 8-10. Heavy installs, only needed from module 8 on: uv sync --group dl
+dl = [
+    "torch",
+    "torchvision",
+    "tensorflow",
+]
